@@ -65,7 +65,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 14rem;
     text-align: left;
   }
 }
@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Droid Sans", serif;
   font-size: 3.25rem;
 }
 
@@ -128,7 +128,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: 48rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -248,3 +248,17 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.social-links {
+  margin-top: 0.5em; }
+  .social-links ul {
+    margin: 0;
+    padding: 0; }
+    .social-links ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 1em; }
+      .social-links ul li a.social-link-item {
+        color: #8d7edc; }
+        .social-links ul li a.social-link-item:hover, .social-links ul li a.social-link-item:focus {
+          color: #bfb6eb; }
