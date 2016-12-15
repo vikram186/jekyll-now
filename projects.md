@@ -6,6 +6,8 @@ title: Projects
 ### Lightweight Capability Domains (LCDs)
 LCDs build on the insight that, lack of isolation between kernel subsystems pose a serious threat to the security of the system. In commodity kernels like Linux, Windows and Mac, isolation was eschewed for performance reasons and lack of support in processor architectures. LCDs introduce a microkernel paradigm to the monolithic Linux and run subsystems of a commodity OS, e.g., device drivers, file systems, network stacks, inside strongly isolated protection domains.
 
+We have also introduced Interface Description Language(IDL) to provide a transparent way of communicating across isolated subsystems and synchronizing their state.
+
 More information can be found on the project page [LCD Home](http://www.cs.utah.edu/~aburtsev/lcd-doc/)
 
 
@@ -16,6 +18,6 @@ A prototype implemetation is here [gadgetSmash](https://github.com/arkivm/gadget
 
 
 ### Extracting struct field names from LLVMDebugInfo
-For interprocedural analysis, one needs the field names of datastructures (e.g., struct) inside the kernel. This is just a minimal implementation on how to do it with LLVMDebugInfo. I have implemented an LLVM pass on top of Adrian's skeleton pass. When run, it prints out the structure and corresponding field names.
+In an effort to automatically generate IDL files for LCDs project, we decided to use LLVM interprocedural datastructure analysis (DSA) on Linux kernel. To have access to the field names of datastructures (e.g., struct) inside the kernel, I have implemented an LLVM functionpass that analyzes arguments of every function and prints out the field names, if the argument is of struct pointer type. The base skeleton code is forked from Adrian's skeleton pass. This is just a minimal implementation on how to do it with LLVMDebugInfo.
 
 A prototype implemetation is here [structfieldnames](https://gitlab.flux.utah.edu/deker/llvm_pass_structfields/tree/release_39).
