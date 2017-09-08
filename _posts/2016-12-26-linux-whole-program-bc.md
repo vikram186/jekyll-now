@@ -3,7 +3,7 @@ layout: post
 title: Compiling Linux kernel as an LLVM bc file
 ---
 
-We needed to perform data structure analysis (DSA) on the Linux kernel and its complex subsystems for [LCDs project](http://www.cs.utah.edu/~aburtsev/lcd-doc/index.php). However, the mainline Linux kernel is not (yet) compilable with LLVM/Clang. But there is a tree maintained [here](http://llvm.linuxfoundation.org/index.php/Main_Page) that has detailed instructions on how to build one using clang. This may not be runnable on an actual system. But for doing DSA, this is sufficient. DSA requires bitcode files of all the modules that need to be analyzed. There is a nice tool, [wllvm]((https://github.com/travitch/whole-program-llvm) for generating bitcode files during compilation, and is now available as a python-pip package.
+We needed to perform data structure analysis (DSA) on the Linux kernel and its complex subsystems for [LCDs project](http://www.cs.utah.edu/~aburtsev/lcd-doc/index.php). However, the mainline Linux kernel is not (yet) compilable with LLVM/Clang. But there is a tree maintained [here](http://llvm.linuxfoundation.org/index.php/Main_Page) that has detailed instructions on how to build one using clang. This may not be runnable on an actual system. But for doing DSA, this is sufficient. DSA requires bitcode files of all the modules that need to be analyzed. There is a nice tool, [wllvm](https://github.com/travitch/whole-program-llvm) for generating bitcode files during compilation, and is now available as a python-pip package.
 
 #### Prerequisites
 * clang/llvm
