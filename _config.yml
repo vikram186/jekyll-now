@@ -17,8 +17,8 @@ author:
   name:           'Vikram Narayanan'
   url:
 
-github:
-  repo:         arkivm
+#github:
+#  repo:         arkivm
 
 paginate:         5
 gems: [jekyll-paginate]
