@@ -24,3 +24,4 @@ paginate:         5
 gems: [jekyll-paginate]
 # Custom vars
 version:
+remote_theme: fongandrew/hydeout
