@@ -25,6 +25,8 @@
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"><i class="fa fa-flask" aria-hidden="true"></i> {{ node.title }}</a>
             {% elsif node.title == "About" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"><i class="fa fa-user-o" aria-hidden="true"></i> {{ node.title }}</a>
+            {% elsif node.title == "Publications" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"><i class="fa fa-book" aria-hidden="true"></i> {{ node.title }}</a>
             {% else %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}"> {{ node.title }}</a>
             {% endif %}
