@@ -16,6 +16,8 @@ author: <a href="https://arkivm.github.io/">Vikram Narayanan</a>
 
 * [Eurosys'21](https://2021.eurosys.org/papers.html#papers)
 
+* [HotOS'21](https://sigops.org/s/conferences/hotos/2021/#program)
+
 * [OSDI'21](https://www.usenix.org/conference/osdi21/technical-sessions)
 
 * [ATC'21](https://www.usenix.org/conference/atc21/technical-sessions)
